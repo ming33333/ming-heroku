@@ -13,7 +13,7 @@ def favicon():
 @app.route('/home')
 def home():
 
-    return render_template('mainpage')
+    return render_template('mainpage.html')
 
 if __name__ == "__main__":
     app.secret_key = 'ItIsASecret'
