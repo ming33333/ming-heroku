@@ -3,7 +3,7 @@ import os
 from flask import send_from_directory, render_template, request
 from flask.helpers import url_for
 from werkzeug.utils import redirect
-import graph
+#import graph
 #import sound
 
 
@@ -34,11 +34,12 @@ def submit():
         return redirect(url_for("welcome",usr=user_name))
 
 #test route for practising navigation
+""""
 @app.route('/graph')
 def test():
         graph_img = graph()
         return render_template(graph_img)
-
+"""
 
 @app.route('/<usr>')
 def welcome(usr):
