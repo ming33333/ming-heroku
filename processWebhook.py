@@ -18,20 +18,15 @@ def favicon():
 @app.route('/home')
 @app.route('/button_element.php',methods = ['POST'])
 
-#below is simple code that should show on the webpage
+
+#below trying to resolve how to develop website to post projects
 @app.route('/')
 @app.route('/home')
-def home():
-    return "Hello World"
-
-
-""""
-#below trying to resolve how to develop website to post projects
 def home():
     if request.method == 'POST':
         print('at frontage')
     return render_template('frontpage.html')
-
+""""
 #below is an example on how to take user data with post/get, the below script can also activate sound
 @app.route('/welcome.php',methods = ['POST'])
 def submit():
