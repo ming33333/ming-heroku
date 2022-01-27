@@ -48,10 +48,11 @@ def test():
         graph_img = graph()
         return render_template(graph_img)
 
-"""
+
 @app.route('/<usr>')
 def welcome(usr):
     return f"<p> {usr} </p>"
+"""
 if __name__ == "__main__":
     app.secret_key = 'ItIsASecret'
     app.debug = True
