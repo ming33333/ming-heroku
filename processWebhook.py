@@ -18,6 +18,14 @@ def favicon():
 @app.route('/home')
 @app.route('/button_element.php',methods = ['POST'])
 
+#below is simple code that should show on the webpage
+@app.route('/')
+@app.route('/home')
+def home():
+    return "Hello World"
+
+
+""""
 #below trying to resolve how to develop website to post projects
 def home():
     if request.method == 'POST':
@@ -34,13 +42,13 @@ def submit():
         return redirect(url_for("welcome",usr=user_name))
 
 #test route for practising navigation
-""""
+
 @app.route('/graph')
 def test():
         graph_img = graph()
         return render_template(graph_img)
-"""
 
+"""
 @app.route('/<usr>')
 def welcome(usr):
     return f"<p> {usr} </p>"
